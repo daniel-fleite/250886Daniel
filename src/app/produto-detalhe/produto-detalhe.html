@@ -1,3 +1,20 @@
 <h1>Detalhes do Produto</h1>
 
-<p>ID do produto: {{ id }}</p>
+@if (produto) {
+
+  <h2>{{ produto.nome }}</h2>
+
+  <p>Preço: R$ {{ produto.preco }}</p>
+
+  <p>Descrição: {{ produto.descricao }}</p>
+
+  <p>
+    Estoque:
+    {{ produto.emEstoque ? 'Disponível' : 'Fora de estoque' }}
+  </p>
+
+} @else {
+
+  <p>Produto não encontrado.</p>
+
+}
