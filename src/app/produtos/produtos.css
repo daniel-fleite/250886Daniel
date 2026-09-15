@@ -1,0 +1,17 @@
+.produto {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button.fora-estoque {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}

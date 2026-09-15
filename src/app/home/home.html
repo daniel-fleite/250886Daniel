@@ -1,0 +1,12 @@
+<h1>Home</h1>
+
+@if (showBanner) {
+  <div class="banner">
+    <h2>Promoção Especial!</h2>
+    <p>Aproveite nossas ofertas por tempo limitado.</p>
+  </div>
+}
+
+<button (click)="toggleBanner()">
+  {{ showBanner ? 'Ocultar Banner' : 'Mostrar Banner' }}
+</button>
